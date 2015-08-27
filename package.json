@@ -1,6 +1,6 @@
 {
   "name": "materialize-sass",
-  "version": "0.95.2",
+  "version": "0.97.0",
   "description": "Materialize sass and fonts",
   "main": "index.js",
   "scripts": {
