@@ -1,8 +1,8 @@
 {
   "name": "materialize-sass",
-  "version": "0.95.2",
+  "version": "0.98.2",
   "description": "Materialize sass and fonts",
-  "main": "index.js",
+  "main": "sass/materialize.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
