@@ -31,20 +31,12 @@
 .picker__select--month,
 .picker__select--year {
 
-
-//  border: 1px solid #b7b7b7;
-
   height: 2em;
-  padding: .5em;
+  padding: 0;
   margin-left: .25em;
   margin-right: .25em;
 }
-@media (min-width: 24.5em) {
-  .picker__select--month,
-  .picker__select--year {
-    margin-top: -0.5em;
-  }
-}
+
 // Modified
 .picker__select--month.browser-default {
   display: inline;
@@ -54,7 +46,7 @@
 .picker__select--year.browser-default {
   display: inline;
   background-color: #FFFFFF;
-  width: 25%;
+  width: 26%;
 }
 .picker__select--month:focus,
 .picker__select--year:focus {
@@ -180,7 +172,6 @@
 }
 
 
-
 .picker__day--infocus:hover{
   cursor: pointer;
   color: #000;
@@ -188,7 +179,7 @@
 }
 
 .picker__day--outfocus {
-
+  display: none;
   padding: .75rem 0;
   color: #fff;
 
@@ -218,7 +209,7 @@
 
 //  Circle background
    border-radius: 50%;
-  @include transform(scale(.75));
+  transform: scale(.75);
   background: #0089ec;
   color: #ffffff;
 }
@@ -403,7 +394,7 @@
 .picker--focused .picker__day--selected {
   // Circle background
   border-radius: 50%;
-  @include transform(scale(.9));
+  transform: scale(.9);
   background-color: $datepicker-selected;
   &.picker__day--outfocus {
     background-color: $datepicker-selected-outfocus;
